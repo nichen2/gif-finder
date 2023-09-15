@@ -2,7 +2,7 @@ const apiKey = "MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym";
 
 async function getGIF() {
   const searchVal = $("#search").val();
-  let response = await axios.get("http://api.giphy.com/v1/gifs/search", {
+  let response = await axios.get("https://api.giphy.com/v1/gifs/search", {
     params: { q: searchVal, api_key: apiKey },
   });
   console.log(response.data);
